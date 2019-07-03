@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import sass from 'node-sass'
 import './style.scss'
 import links from './links'
 
@@ -11,25 +10,40 @@ class Navbar extends Component {
 
     this.state = {
       active: false,
+      changeStyle: false,
     };
     this.handleDropdown = this.handleDropdown.bind(this);
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, true);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll, true);
   }
 
   handleDropdown() {
-    const currentState = this.state.active;
-    this.setState({ active: !currentState })
+    this.setState({ active: !this.state.active })
+  }
+
+  handleScroll() {
+      if(window.scrollY > 53) {
+        return this.setState({ changeStyle: true })
+      }
+      return this.setState({ changeStyle: false })
   }
 
   render() {
     return (
-      <nav className='navbar'>
+      <nav className={this.state.changeStyle ? 'navbar scrolled' : 'navbar'}>
         <div className='container'>
           <div className="logo-container">
-            <div className='logo'>Port Project</div>
-            <button className='dropbtn' onClick={this.handleDropdown}>Menu</button>
+            <div className='logo'><a href="/">Port Project</a></div>
+            <button className='dropbtn' onClick={this.handleDropdown}>Menu <i className="fas fa-bars"></i></button>
           </div>
-          <div className={this.state.active ? 'active links-container' : 'links-container'}>
-            <div className={this.state.active ? 'active links' : 'links'}>{links.map((link, i) => <li key={i}><a href={link.href}>{link.name}</a></li>)}</div>
+          <div className={this.state.active ? 'links active' : 'links'}>
+            {links.map((link, i) => <li key={i}><a href={link.href}>{link.name}</a></li>)}
           </div>
         </div>
       </nav>
