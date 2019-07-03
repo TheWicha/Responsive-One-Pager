@@ -1,0 +1,61 @@
+.header-wrapper{
+  height: 1040px;
+}
+
+.header {
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0, rgba(22, 22, 22, 0.7) 75%, #161616 100%),
+    url("../../img/bg-masthead.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.header-center h1 {
+  font-weight: 500;
+  font-size: 6em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: "Nunito", sans-serif;
+}
+
+.header-center h2 {
+  max-width: 20em;
+  font-size: 1.25em;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header-center a {
+  padding: 1.3rem 3rem;
+  color: white;
+  text-decoration: none;
+  background-color: #64a19d;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.15rem;
+  &:active {
+    background-color: #4f837f;
+    transition: background-color 0.2s ease-in-out;
+  }
+}
+
+@media (max-width: 769px) {
+  .header-center h1 {
+    font-size: 4em;
+  }
+
+  .header-center h2 {
+    font-size: 1em;
+  }
+
+  .header-center a {
+    padding: 0.9rem 1.5rem;
+  }
+}
