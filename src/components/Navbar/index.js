@@ -22,7 +22,6 @@ class Navbar extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll, true);
-    
   }
 
   handleDropdown() {
@@ -35,9 +34,6 @@ class Navbar extends Component {
     }
     return this.setState({ changeStyle: false });
   }
-    
-
-
 
   render() {
     return (
