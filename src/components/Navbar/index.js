@@ -17,10 +17,12 @@ class Navbar extends Component {
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, true);
+
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll, true);
+    
   }
 
   handleDropdown() {
@@ -28,11 +30,14 @@ class Navbar extends Component {
   }
 
   handleScroll() {
-      if(window.scrollY > 53) {
-        return this.setState({ changeStyle: true })
-      }
-      return this.setState({ changeStyle: false })
+    if (window.scrollY > 53) {
+      return this.setState({ changeStyle: true })
+    }
+    return this.setState({ changeStyle: false });
   }
+    
+
+
 
   render() {
     return (

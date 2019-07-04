@@ -1,7 +1,8 @@
 export default [
   {
    name: 'About',
-   href: '/about' 
+   href: '/about',
+   height: 971 
   },
   {
     name: 'Projects',
