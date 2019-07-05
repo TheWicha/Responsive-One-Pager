@@ -42,3 +42,44 @@
   height: auto;
   width: 720px;
 }
+
+@media (max-width: 1200px) {
+  .about-img {
+    width: 850px;
+    height: auto;
+  }
+
+  .about-center {
+    width: 609px;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-img {
+    width: 690px;
+    height: auto;
+  }
+}
+
+@media (max-width: 730px) {
+  .about-img {
+    width: 510px;
+    height: auto;
+  }
+  .about-center {
+    width: 510px;
+    height: auto;
+  }
+}
+
+@media (max-width: 570px) {
+  .about-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .about-center {
+    max-width: 100%;
+    height: auto;
+  }
+}

@@ -2,14 +2,16 @@ export default [
   {
    name: 'About',
    href: '/about',
-   height: 971 
+   id: 1
   },
   {
     name: 'Projects',
-    href: '/projects' 
+    href: '/projects',
+    id: 2 
    },
    {
     name: 'Contact',
-    href: '/contact' 
+    href: '/contact',
+    id: 3
    },
 ]
