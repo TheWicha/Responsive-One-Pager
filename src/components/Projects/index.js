@@ -1,5 +1,8 @@
 import React from 'react'
 import './style.scss'
+import posts from './posts'
+import img1 from '../../img/demo-image-01.jpg'
+import img2 from '../../img/demo-image-02.jpg'
 import image from '../../img/bg-masthead.jpg'
 
 function Projects(props) {
@@ -12,10 +15,31 @@ function Projects(props) {
           </div>
           <div className='projects-second-element'>
             <h4>Shoreline</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget augue id orci vestibulum varius. Curabitur orci mi, rutrum sed tincidunt vel, dictum efficitur leo. Nullam cursus, eros tincidunt pulvinar rutrum.</p>
+            <p>{posts[0].text}</p>
           </div>
         </div>
+        <div className='projects-second-pair'>
+        <div className=''>
+          <img alt='' src={img1} />
+        </div>
+        <div className='misty'>
+          <h4>Misty</h4>
+          <p>{posts[1].text}</p>
+          <hr></hr>
+        </div>
       </div>
+      <div className='projects-third-pair'>
+        <div className=''>
+          <img alt='' src={img2} />
+        </div>
+        <div className='mountains'>
+          <h4>Mountains</h4>
+          <p>{posts[1].text}</p>
+          <hr></hr>
+        </div>
+      </div>
+      </div>
+      
     </section>
   )
 };
