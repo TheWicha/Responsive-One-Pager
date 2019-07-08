@@ -8,10 +8,10 @@ import Projects from '../Projects';
 function Main(props) {
   return (
     <div className='main'>
-        <Navbar />
-        <Header />
-        <About />
-        <Projects />
+      <Navbar />
+      <Header />
+      <About />
+      <Projects />
     </div>
   )
 };
