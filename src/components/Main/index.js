@@ -4,6 +4,7 @@ import Navbar from '../Navbar'
 import Header from '../Header'
 import About from '../About';
 import Projects from '../Projects';
+import Signup from '../Signup';
 
 function Main(props) {
   return (
@@ -12,6 +13,7 @@ function Main(props) {
       <Header />
       <About />
       <Projects />
+      <Signup />
     </div>
   )
 };
