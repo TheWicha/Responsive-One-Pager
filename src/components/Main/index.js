@@ -6,6 +6,7 @@ import About from '../About';
 import Projects from '../Projects';
 import Signup from '../Signup';
 import Contact from '../Contact';
+import Footer from '../Footer';
 
 function Main(props) {
   return (
@@ -16,6 +17,7 @@ function Main(props) {
       <Projects />
       <Signup />
       <Contact />
+      <Footer />
     </div>
   )
 };
