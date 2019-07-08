@@ -19,7 +19,7 @@ function Projects(props) {
           </div>
         </div>
         <div className='projects-second-pair'>
-        <div className=''>
+        <div className='projects-img-container'>
           <img alt='' src={img1} />
         </div>
         <div className='misty'>
@@ -29,7 +29,7 @@ function Projects(props) {
         </div>
       </div>
       <div className='projects-third-pair'>
-        <div className=''>
+        <div className='projects-img-container'>
           <img alt='' src={img2} />
         </div>
         <div className='mountains'>
