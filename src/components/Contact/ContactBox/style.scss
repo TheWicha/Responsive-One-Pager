@@ -1,0 +1,32 @@
+.contact-box{
+  margin: 10px;
+  width: 32%;
+  background-color: white;
+  padding: 2em;
+  border-radius: .25em;
+  border-bottom: 3px solid #64a19d;
+}
+
+.contact-box i {
+  color: #64a19d;
+}
+
+.contact-box hr {
+  width: 15%;
+  border-color:#64a19d;
+  border-width: .25em;
+  border: 0;
+  border-top: 0.25rem solid #64a19d;
+}
+
+.contact-box h4 {
+  font-weight: 400;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-top: 0.55em;
+}
+
+.contact-box p {
+  font-size: 0.8em;
+  color: rgba(0,0,0,.5);
+}
