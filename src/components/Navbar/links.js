@@ -1,17 +1,17 @@
 export default [
   {
    name: 'About',
-   href: '/about',
+   href: '#about',
    id: 1
   },
   {
     name: 'Projects',
-    href: '/projects',
+    href: '#projects',
     id: 2 
    },
    {
     name: 'Contact',
-    href: '/contact',
+    href: '#contact',
     id: 3
    },
 ]

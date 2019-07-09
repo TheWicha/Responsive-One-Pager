@@ -8,6 +8,7 @@ import image from '../../img/bg-masthead.jpg'
 function Projects(props) {
   return (
     <section className='projects'>
+      <a className="anchor" id="projects" href="#projects"> </a>
       <div className='projects-container'>
         <div className='projects-first-pair'>
           <div className='projects-first-element'>
