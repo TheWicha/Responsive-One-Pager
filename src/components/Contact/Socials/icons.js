@@ -1,14 +1,14 @@
 export default [
   {
     name: "fab fa-twitter",
-    href: "#"
+    href: "https://twitter.com"
   },
   {
     name: "fab fa-facebook-f",
-    href: "#"
+    href: "https://facebook.com"
   },
   {
     name: "fab fa-github",
-    href: "#"
+    href: "https://github.com/TheWicha/Responsive-One-Pager"
   },
 ]
