@@ -24,3 +24,30 @@
 .socials a:hover{
   color:rgba(255,255,255,.5);
 }
+
+@media (max-width: 1200px) {
+  .socials {
+    width: 850px;
+  }
+}
+
+@media (max-width: 900px) {
+  .socials {
+    width: 690px;
+  }
+}
+
+@media (max-width: 730px) {
+  .socials {
+    width: 510px;
+  }
+}
+
+@media (max-width: 570px) {
+  .socials {
+    width: 400px;
+  }
+  .socials a {
+    font-size: .7em;
+  }
+}

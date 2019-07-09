@@ -8,8 +8,9 @@ function Contact(props) {
   return (
     <section className='contact'>
       <div className='contact-wrapper'>
-        {contacts.map(contact => (
+        {contacts.map((contact, i) => (
           <ContactBox
+            key={i}
             icon={contact.icon}
             type={contact.type}
             text={contact.text}

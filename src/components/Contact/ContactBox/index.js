@@ -4,7 +4,7 @@ import './style.scss'
 function ContactBox(props) {
   return (
     <div className='contact-box'>
-      <i class={props.icon}></i>
+      <i className={props.icon}></i>
       <h4>{props.type}</h4>
       <hr />
       <p>{props.text}</p>

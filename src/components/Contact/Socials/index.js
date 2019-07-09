@@ -6,8 +6,8 @@ import icons from './icons'
 function Socials(props) {
   return (
 <div className="socials">
-  {icons.map(icon => (
-    <a href={icon.href}>
+  {icons.map((icon, i) => (
+    <a key={i} href={icon.href}>
       <i className={icon.name}></i>
     </a>
   ))}

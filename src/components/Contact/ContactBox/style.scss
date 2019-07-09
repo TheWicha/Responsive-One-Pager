@@ -30,3 +30,18 @@
   font-size: 0.8em;
   color: rgba(0,0,0,.5);
 }
+
+
+
+
+@media (max-width: 730px) {
+  .contact-box {
+    width: 63%;
+  }
+}
+
+@media (max-width: 570px) {
+  .contact-box {
+    width: 50%;
+  }
+}
