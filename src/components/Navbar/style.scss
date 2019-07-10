@@ -132,3 +132,10 @@
     padding: 1em 0;
   }
 }
+
+@media (max-width: 361px) {
+  .dropbtn {
+    font-size: 0.6em;
+    padding: 0.45rem;
+  }
+}

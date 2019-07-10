@@ -45,7 +45,6 @@
     transition: background-color 0.2s ease-in-out;
   }
 }
-
 @media (max-width: 769px) {
   .header-center h1 {
     font-size: 4em;
@@ -58,4 +57,30 @@
   .header-center a {
     padding: 0.9rem 1.5rem;
   }
+};
+@media (max-width: 570px) {
+.header-center {
+  margin: 0 auto;
+  width: 78%;
+  & h1 {
+    font-size: 3em;
+  }
 }
+}
+
+@media (max-width: 360px) {
+  .header{
+    width: 58%;
+  }
+  .header-center h1 {
+    font-size: 1.8em
+}
+  .header-center h2 {
+    font-size: 0.7em;
+}
+.header-center a {
+  font-size: .6rem;
+  padding: 0.6rem 1rem;
+}
+};
+

@@ -232,13 +232,6 @@
 }
 
 @media (max-width: 570px) {
-  .header-center {
-    margin: 0 auto;
-    width: 78%;
-    & h1 {
-      font-size: 3em;
-    }
-  }
   .about-img {
     max-width: 100%;
     height: auto;
@@ -263,4 +256,31 @@
   .mountains {
     width: 62.1%;
   }
+}
+
+@media (max-width: 361px) {
+  .projects {
+    width: 58%;
+  }
+  .projects-container {
+    width: 58%;
+  }
+  .projects-first-element img,
+  .projects-img-container {
+    width: 58%;
+    height: 203px;
+  }
+  .projects-second-element p {
+    width: 56%;
+    font-size: 0.6em;
+    line-height: 1rem;
+  }
+  .misty, .mountains {
+    width: 38.1%;
+}
+  .misty p, .mountains p {
+    width: 100%;
+    line-height: 0.9rem;
+    font-size: 61%;
+}
 }
