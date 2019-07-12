@@ -84,7 +84,7 @@
 
 @media (max-width: 768px) {
   .projects-container {
-    max-width: 482px;
+    max-width: 100%;
   }
 }
 
@@ -98,7 +98,7 @@
 
 @media (max-width: 420px){
   .projects-container {
-    max-width: 330px;
+    max-width: 100%;
   }
   .project-text p {
     font-size: 0.6em;
