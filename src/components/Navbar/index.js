@@ -16,6 +16,7 @@ class Navbar extends Component {
       newStyle: false,
     };
     this.handleDropdown = this.handleDropdown.bind(this);
+    this.handleDropdownIfOpen = this.handleDropdownIfOpen.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
   }
   componentDidMount() {
@@ -29,6 +30,10 @@ class Navbar extends Component {
 
   handleDropdown() {
     this.setState({ active: !this.state.active })
+  }
+
+  handleDropdownIfOpen() {
+    return this.state.active ? this.setState({ active: false }) : null
   }
 
   handleScroll() {
@@ -45,7 +50,7 @@ class Navbar extends Component {
       <nav className={changeStyle ? 'navbar scrolled' : 'navbar'}>
         <div className='container'>
           <div className="logo-container">
-            <div className='logo'><a href="#header">Port Project</a></div>
+            <div className='logo'><a onClick={this.handleDropdownIfOpen} href="#header">Port Project</a></div>
             <button className='dropbtn' onClick={this.handleDropdown}>Menu <FontAwesomeIcon icon={faBars} /></button>
           </div>
           <div className={active ? 'links active' : 'links'}>
