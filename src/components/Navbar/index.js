@@ -45,7 +45,7 @@ class Navbar extends Component {
       <nav className={changeStyle ? 'navbar scrolled' : 'navbar'}>
         <div className='container'>
           <div className="logo-container">
-            <div className='logo'><a href="/">Port Project</a></div>
+            <div className='logo'><a href="#header">Port Project</a></div>
             <button className='dropbtn' onClick={this.handleDropdown}>Menu <FontAwesomeIcon icon={faBars} /></button>
           </div>
           <div className={active ? 'links active' : 'links'}>
