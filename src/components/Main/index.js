@@ -13,7 +13,8 @@ class Main extends Component {
 
   componentDidMount() {
     $(document).ready(function () {
-      $('a[href^="#"]').on('click', function () {
+      $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
         let target = this.hash;
         let $target = $(target);
         $('html, body').animate({

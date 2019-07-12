@@ -32,7 +32,7 @@ class Navbar extends Component {
   }
 
   handleScroll() {
-    if (window.scrollY >= 0) {
+    if (window.scrollY > 55) {
       return this.setState({ changeStyle: true })
     }
     return this.setState({ changeStyle: false });
@@ -50,9 +50,8 @@ class Navbar extends Component {
           </div>
           <div className={active ? 'links active' : 'links'}>
             {links.map((link, i) =>
-              <li
-                key={link.id}>
-                <a onClick={this.handleDropdown} href={link.href}>{link.name}</a>
+              <li key={link.id}>
+                <a onClick={this.handleDropdown} href={link.href}>{link.name} </a>
               </li>)}
           </div>
         </div>
@@ -64,3 +63,5 @@ class Navbar extends Component {
 
 
 export default Navbar;
+
+

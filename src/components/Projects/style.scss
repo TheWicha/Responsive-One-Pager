@@ -1,284 +1,106 @@
 .projects {
   width: 100%;
   min-height: 35rem;
-  padding: 15rem 0;
+  padding: 10rem 0;
   background-color: #f8f9fa;
 }
+
 .projects-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 70%;
-  margin: 0 auto;
+  width: 1200px;
+  flex-direction: row;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
 }
 
-.projects-first-pair {
-  display: flex;
-  align-items: center;
-  padding: 0 4em;
-  width: 1100px;
-  margin-bottom: 3em;
+.projects-container img {
+  width: 59%;
 }
 
-.projects-first-element {
-  max-width: 66%;
+.project-text {
+  width: 300px;
+  height: 184px;
+  padding-left: 2em;
+  border-left: 0.5rem solid #64a19d;
+  text-align: left;
+}
+
+.project-text p {
+  margin: 0;
+  padding-top: 1em;
+}
+
+.project-text h4 {
+  font-weight: 400;
+  font-size: 1.5rem;
   margin: 0;
 }
 
-.projects-second-element {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-  padding-left: 3em;
-  border-left: 0.5rem solid #64a19d;
-}
-.projects-second-element p {
-  margin-bottom: 0px;
-  font-size: 78%;
-  width: 99%;
-  line-height: 1.5rem;
-}
-
-.projects-second-element h4 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin: 0px;
-}
-
-.projects-first-element img {
-  height: auto;
-  width: 720px;
-}
-
-.projects-second-pair,
-.projects-third-pair {
-  width: 1100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background: black;
-}
-.projects-third-pair {
-  flex-direction: row-reverse;
-}
-.misty {
-  color: white;
-  padding: 5rem;
-  text-align: justify;
-}
-
-.misty p {
-  font-size: 78%;
-  width: 80%;
-  line-height: 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-.mountains p {
-  margin-right: 0px;
-  width: 80%;
-  font-size: 78%;
-  line-height: 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.mountains {
-  color: white;
-  padding: 5rem;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.projects-second-pair img,
-.projects-third-pair img {
-  width: 549px;
-}
-
-.misty h4,
-.mountains h4 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
-.misty hr {
-  margin-left: 0;
-  width: 30%;
-  border-color: #64a19d;
-  border: 0;
-  border-top: 0.25rem solid #64a19d;
-}
-.mountains hr {
-  margin-right: 0;
-  width: 30%;
-  border-color: #64a19d;
-  border: 0;
-  border-top: 0.25rem solid #64a19d;
-}
-//responsive part
-
 @media (max-width: 1200px) {
-  .projects-first-pair,
-  .projects-second-pair,
-  .projects-third-pair {
-    width: 850px;
-  }
-  .projects-img-container {
-    width: 96%;
-    max-height: 350px;
-  }
-  .projects-first-element img {
-    width: 542px;
-  }
-  .projects-second-pair img,
-  .projects-third-pair img {
-    max-width: 100%;
-    height: 350px;
-  }
-  .misty,
-  .mountains {
-    width: 60%;
-  }
-  .misty p,
-  .mountains p {
-    width: 110%;
+  .projects-container {
+    max-width: 900px;
   }
 }
 
-@media (max-width: 900px) {
-  .projects-first-pair,
-  .projects-second-pair,
-  .projects-third-pair {
+@media (max-width: 1000px) {
+  .projects-container {
     flex-direction: column;
-    width: 690px;
+    max-width: 660px;
+    
   }
-  .projects-second-pair,
-  .projects-third-pair {
-    background: none;
+  .projects-container img {
+    width: 100%;
   }
-  .projects-second-pair {
-    margin-bottom: 2.5em;
-  }
-  .misty,
-  .mountains {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding: 2rem 4.2rem;
+  .project-text {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    border: none;
     text-align: center;
-    width: 80%;
-    & hr {
-      display: none;
+    height: 180px;
+    & p {
+      font-size: 0.9em;
+      line-height: 2em;
     }
   }
-  .projects-first-element {
-    max-width: 100%;
-  }
-  .projects-second-element {
-    padding: 0;
-    border-left: none;
-    align-items: center;
-    text-align: center;
-  }
-  .projects-first-element img {
-    width: 690px;
-  }
-  .projects-second-element h4 {
-    margin-top: 2em;
-  }
 
-  .projects-second-element p {
-    width: 86%;
-  }
-  .projects-second-pair img,
-  .projects-third-pair img {
-    width: 686.9px;
-    max-width: 100%;
-    height: 420px;
-  }
-  .projects-img-container {
-    width: 100%;
-    max-height: 420px;
-  }
+  
 }
-
-@media (max-width: 730px) {
-  .projects-first-pair,
-  .projects-second-pair,
-  .projects-third-pair {
-    flex-direction: column;
-    width: 510px;
-  }
-  .projects-first-element img {
-    width: 510px;
-  }
-
-  .projects-second-element p {
-    width: 86%;
-  }
-  .projects-img-container {
-    width: 100%;
-    max-height: 395px;
-  }
-  .misty,
-  .mountains {
-    padding: 2rem 3.2rem;
-  }
-}
-
-@media (max-width: 570px) {
-  .about-img {
-    max-width: 100%;
-    height: auto;
-  }
-  .about-center {
-    max-width: 100%;
-    height: auto;
-  }
+@media (max-width: 850px) {
   .projects-container {
-    width: 420px;
+    max-width: 70%;
   }
-  .projects-first-element img,
-  .projects-img-container {
-    width: 420px;
-    height: 290px;
-  }
-  .projects-second-pair img,
-  .projects-third-pair img {
-    height: auto;
-  }
-  .misty,
-  .mountains {
-    width: 62.1%;
+}
+@media (max-width: 992px) {
+  .projects-container {
+    max-width: 600px;
   }
 }
 
-@media (max-width: 414px) {
-
+@media (max-width: 768px) {
   .projects-container {
-    width: 58%;
+    max-width: 482px;
   }
-  .projects-first-element img,
-  .projects-img-container {
-    width: 58%;
-    height: 203px;
+}
+
+@media (max-width: 550px) {
+  .project-text {
+    max-width: 482px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  .projects-second-element p {
-    width: 56%;
+}
+
+@media (max-width: 420px){
+  .projects-container {
+    max-width: 330px;
+  }
+  .project-text p {
     font-size: 0.6em;
-    line-height: 1rem;
-  }
-  .misty, .mountains {
-    width: 38.1%;
-}
-  .misty p, .mountains p {
-    width: 100%;
-    line-height: 0.9rem;
-    font-size: 61%;
 }
 }

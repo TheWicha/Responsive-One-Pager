@@ -5,7 +5,7 @@ import img from '../../img/ipad.png'
 function About(props) {
   return (
     <section className='about'>
-      <a className="anchor" id="about" href="#about"> </a>
+      <button className="anchor" id="about"/>
       <div className='about-container'>
         <div className='about-center'>
           <h2>Build with passion!</h2>
