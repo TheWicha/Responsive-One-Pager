@@ -42,6 +42,9 @@
 
 @media (max-width: 570px) {
   .contact-box {
-    width: 50%;
+    width: 75%;
+  }
+  .contact-box:nth-child(2) {
+    font-size: 0.7em;
   }
 }

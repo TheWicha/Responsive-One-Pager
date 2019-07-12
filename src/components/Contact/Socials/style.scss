@@ -45,16 +45,10 @@
 
 @media (max-width: 570px) {
   .socials {
-    width: 400px;
+    width: 100%;
   }
   .socials a {
     font-size: .7em;
-  }
-}
-
-@media (max-width: 414px) {
-  .socials {
-    width: 300px;
   }
 }
 
