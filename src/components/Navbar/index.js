@@ -15,17 +15,14 @@ class Navbar extends Component {
     };
     this.handleDropdown = this.handleDropdown.bind(this);
     this.handleScroll = this.handleScroll.bind(this)
-    this.handleStyleChange = this.handleStyleChange.bind(this)
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, true);
-    window.addEventListener('scroll', this.handleStyleChange, true);
 
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll, true);
-    window.removeEventListener('scroll', this.handleStyleChange, true);
   }
 
   handleDropdown() {
@@ -33,22 +30,16 @@ class Navbar extends Component {
   }
 
   handleScroll() {
-    if (window.scrollY > 53) {
+    console.log(window.scrollY)
+    if (window.scrollY >= 0) {
       return this.setState({ changeStyle: true })
     }
     return this.setState({ changeStyle: false });
   }
 
-  handleStyleChange() {
-    if (window.scrollY > 970 && window.scrollY < 1645) {
-      return this.setState({ newStyle: true })
-    }
-    return this.setState({ newStyle: false });
-  }
-
 
   render() {
-    const { changeStyle, active, newStyle } = this.state
+    const { changeStyle, active } = this.state
 
     return (
       <nav className={changeStyle ? 'navbar scrolled' : 'navbar'}>
@@ -60,7 +51,6 @@ class Navbar extends Component {
           <div className={active ? 'links active' : 'links'}>
             {links.map((link, i) =>
               <li
-                className={newStyle && i === 0 ? 'scrolled-li' : ''}
                 key={link.id}>
                 <a href={link.href}>{link.name}</a>
               </li>)}
