@@ -17,7 +17,7 @@ function Projects(props) {
           <p>{posts[0].text}</p>
         </div>
       </div>
-      <div ckassName="misty-wrapper">
+      <div className="misty-wrapper">
         <MistyMountains
           tittle={posts[0].title}
           img={img1}

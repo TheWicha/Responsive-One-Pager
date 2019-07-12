@@ -1,12 +1,14 @@
 import React from 'react'
 import './style.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 function Signup(props) {
   return (
     <section className='signup'>
       <button className="anchor" id="contact" />
       <div className='signup-container'>
-        <i className="far fa-paper-plane"></i>
+      <FontAwesomeIcon icon={faPaperPlane } />
         <h4>Subscribe to receive updates!</h4>
       </div>
       <form className="signup-form">
