@@ -53,6 +53,7 @@ class Navbar extends Component {
           <div className={active ? 'links active' : 'links'}>
             {links.map((link, i) =>
               <li
+                onClick={this.handleDropdown}
                 key={link.id}>
                 <a href={link.href}>{link.name}</a>
               </li>)}
