@@ -20,3 +20,9 @@ html, body {
   visibility: hidden;
   top: -230px;
 }
+
+@media(max-width: 420px){
+  .anchor{
+    top: -109px;
+  }
+}
