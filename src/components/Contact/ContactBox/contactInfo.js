@@ -1,16 +1,19 @@
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkedAlt, faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 export default [
   {
-    icon:"fas fa-map-marked-alt",
+    icon: <FontAwesomeIcon icon={faMapMarkedAlt} />,
     type: "address",
     text: "Wodna 123, Poznań"
   },
   {
-    icon:"fas fa-envelope",
+    icon:<FontAwesomeIcon icon={faEnvelope} />,
     type: "email",
     text: "hello@yourdomain.com"
   },
   {
-    icon:"fas fa-mobile-alt",
+    icon:<FontAwesomeIcon icon={faMobileAlt} />,
     type: "phone",
     text: "+48 555-000-111"
   },

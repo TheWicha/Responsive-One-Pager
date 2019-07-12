@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './style.scss'
 import links from './links'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -46,7 +48,7 @@ class Navbar extends Component {
         <div className='container'>
           <div className="logo-container">
             <div className='logo'><a href="/">Port Project</a></div>
-            <button className='dropbtn' onClick={this.handleDropdown}>Menu <i className="fas fa-bars"></i></button>
+            <button className='dropbtn' onClick={this.handleDropdown}>Menu <FontAwesomeIcon icon={faBars} /></button>
           </div>
           <div className={active ? 'links active' : 'links'}>
             {links.map((link, i) =>
