@@ -60,14 +60,14 @@
   }
 
   .scrolled-li {
-    border-bottom: .25rem solid #64a19d;
+    border-bottom: 0.25rem solid #64a19d;
     color: #64a19d;
     a {
       color: #64a19d;
     }
   }
 
-  .logo a{
+  .logo a {
     color: black;
   }
 }
@@ -122,7 +122,7 @@
   }
 
   .links a {
-    color: #64a19d;
+    color: rgba(0, 0, 0, 0.5);
     &:hover {
       color: black;
     }

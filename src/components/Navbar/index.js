@@ -32,7 +32,6 @@ class Navbar extends Component {
   }
 
   handleScroll() {
-    console.log(window.scrollY)
     if (window.scrollY >= 0) {
       return this.setState({ changeStyle: true })
     }
@@ -42,7 +41,6 @@ class Navbar extends Component {
 
   render() {
     const { changeStyle, active } = this.state
-
     return (
       <nav className={changeStyle ? 'navbar scrolled' : 'navbar'}>
         <div className='container'>
@@ -53,9 +51,8 @@ class Navbar extends Component {
           <div className={active ? 'links active' : 'links'}>
             {links.map((link, i) =>
               <li
-                onClick={this.handleDropdown}
                 key={link.id}>
-                <a href={link.href}>{link.name}</a>
+                <a onClick={this.handleDropdown} href={link.href}>{link.name}</a>
               </li>)}
           </div>
         </div>
