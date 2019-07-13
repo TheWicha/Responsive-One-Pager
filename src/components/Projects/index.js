@@ -30,15 +30,15 @@ class Projects extends Component {
 
 
   handleAnimation() {
-    console.log(window.scrollY)
-    if (window.scrollY > 1390) {
+    if (window.scrollY > 1390 && window.innerWidth > 999) {
       return this.setState({ animate: true })
     }
     return this.setState({ animate: false });
   }
 
   handleSecondAnimation() {
-    if (window.scrollY > 1696) {
+    console.log(window.innerWidth)
+    if (window.scrollY > 1696 && window.innerWidth > 999) {
       return this.setState({ mistyAnimate: true })
     }
     return this.setState({ mistyAnimate: false });
@@ -49,14 +49,14 @@ class Projects extends Component {
     return (
       <section className='projects'>
         <button className="anchor" id="projects" />
-        <div className={animate ? 'projects-container slide' : 'projects-container'}>
+        <div className='projects-container'>
           <img src={img3} alt="mountains" />
           <div className="project-text">
             <h4>Shoreline</h4>
             <p>{posts[0].text}</p>
           </div>
         </div>
-        <div className={mistyAnimate ? 'misty-wrapper slide-left' : 'misty-wrapper'}>
+        <div className='misty-wrapper'>
           <MistyMountains
             tittle={posts[0].title}
             img={img1}

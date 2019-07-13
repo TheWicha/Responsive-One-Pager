@@ -7,13 +7,15 @@
   background-color: #161616;
 }
 
-.misty-wrapper {
-  opacity: 0;
-}
+// .misty-wrapper {
+//   opacity: 0;
+// }
 
 .slide-left {
   animation: slide-left 1s linear forwards;
 }
+
+.show { opacity: 1}
 
 .misty hr {
   margin-left: 0;
