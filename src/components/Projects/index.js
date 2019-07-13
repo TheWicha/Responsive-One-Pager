@@ -37,7 +37,6 @@ class Projects extends Component {
   }
 
   handleSecondAnimation() {
-    console.log(window.scrollY)
     if (window.scrollY > 1597) {
       return this.setState({ mistyAnimate: true })
     }
