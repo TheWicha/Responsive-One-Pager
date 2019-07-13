@@ -30,7 +30,7 @@ class Projects extends Component {
 
 
   handleAnimation() {
-    if (window.scrollY > 908 && window.innerWidth > 999) {
+    if (window.scrollY > 908) {
       return this.setState({ animate: true })
     }
     return this.setState({ animate: false });
