@@ -16,15 +16,15 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 3rem;
-  // opacity: 0;
 }
 
-.slide{
+.slide {
   animation: slide 1s linear forwards;
 }
 
 .projects-container img {
   width: 59%;
+  opacity: 0;
 }
 
 .project-text {

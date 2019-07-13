@@ -7,17 +7,21 @@
   background-color: #161616;
 }
 
-// .misty-wrapper {
-//   opacity: 0;
-// }
-
-.slide-left {
-  animation: slide-left 1s linear forwards;
+.mist {
+  animation: mist 2s linear forwards;
 }
 
-.show { opacity: 1}
+.slide-up {
+  animation-delay: 3s;
+  animation: slide-up 1.3s linear forwards;
+}
+
+.show {
+  opacity: 1;
+}
 
 .misty hr {
+  opacity: 0;
   margin-left: 0;
   width: 30%;
   border-color: #64a19d;
@@ -65,6 +69,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  opacity: 0;
 }
 
 @media (max-width: 1200px) {
@@ -123,13 +128,22 @@
   }
 }
 
-@keyframes slide-left {
+@keyframes mist{
   0% {
-    transform: translateX(60px);
     opacity: 0;
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+  }
+}
+
+@keyframes slide-up{
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
