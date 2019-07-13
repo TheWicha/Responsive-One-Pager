@@ -13,7 +13,7 @@
 
 .slide-up {
   animation-delay: 3s;
-  animation: slide-up 1.3s linear forwards;
+  animation: slide-up 1s linear forwards;
 }
 
 .show {
@@ -139,7 +139,7 @@
 
 @keyframes slide-up{
   0% {
-    transform: translateY(15px);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {

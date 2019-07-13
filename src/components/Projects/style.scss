@@ -19,7 +19,7 @@
 }
 
 .slide {
-  animation: slide 1s linear forwards;
+  animation: slide 0.5s linear forwards;
 }
 
 .projects-container img {
@@ -109,7 +109,7 @@
 
 @keyframes slide {
   0% {
-    transform: translateX(-40px);
+    transform: translateX(-20px);
     opacity: 0;
   }
   100% {
