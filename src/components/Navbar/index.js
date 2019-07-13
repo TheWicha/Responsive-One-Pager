@@ -18,10 +18,10 @@ class Navbar extends Component {
     this.handleDropdown = this.handleDropdown.bind(this);
     this.handleDropdownIfOpen = this.handleDropdownIfOpen.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
+
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, true);
-
   }
 
   componentWillUnmount() {
@@ -50,8 +50,15 @@ class Navbar extends Component {
       <nav className={changeStyle ? 'navbar scrolled' : 'navbar'}>
         <div className='container'>
           <div className="logo-container">
-            <div className='logo'><a onClick={this.handleDropdownIfOpen} href="#header">Port Project</a></div>
-            <button className='dropbtn' onClick={this.handleDropdown}>Menu <FontAwesomeIcon icon={faBars} /></button>
+            <div className='logo'>
+              <a onClick={this.handleDropdownIfOpen}
+                href="#header">Port Project</a>
+            </div>
+            <button
+              className='dropbtn'
+              onClick={this.handleDropdown}>
+              Menu <FontAwesomeIcon icon={faBars} />
+            </button>
           </div>
           <div className={active ? 'links active' : 'links'}>
             {links.map((link, i) =>

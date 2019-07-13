@@ -16,6 +16,11 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 3rem;
+  opacity: 0;
+}
+
+.slide{
+  animation: slide 1s linear forwards;
 }
 
 .projects-container img {
@@ -51,7 +56,6 @@
   .projects-container {
     flex-direction: column;
     max-width: 660px;
-    
   }
   .projects-container img {
     width: 100%;
@@ -68,8 +72,6 @@
       line-height: 2em;
     }
   }
-
-  
 }
 @media (max-width: 850px) {
   .projects-container {
@@ -96,11 +98,22 @@
   }
 }
 
-@media (max-width: 420px){
+@media (max-width: 420px) {
   .projects-container {
     max-width: 100%;
   }
   .project-text p {
     font-size: 0.6em;
+  }
 }
+
+@keyframes slide {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

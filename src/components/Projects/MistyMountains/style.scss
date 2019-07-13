@@ -7,6 +7,14 @@
   background-color: #161616;
 }
 
+.misty-wrapper {
+  opacity: 0;
+}
+
+.slide-left {
+  animation: slide-left 1s linear forwards;
+}
+
 .misty hr {
   margin-left: 0;
   width: 30%;
@@ -20,7 +28,7 @@
 }
 
 .misty p {
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
   text-align: left;
 }
 
@@ -92,11 +100,10 @@
     flex-direction: column;
     margin-top: 2em;
   }
-  .misty:nth-child(2) p{
+  .misty:nth-child(2) p {
     text-align: center;
   }
 }
-
 
 @media (max-width: 992px) {
   .misty {
@@ -111,5 +118,16 @@
 @media (max-width: 768px) {
   .misty {
     max-width: 95%;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
